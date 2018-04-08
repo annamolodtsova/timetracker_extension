@@ -1,0 +1,107 @@
+body {
+    background-color: #fafafa;
+}
+
+header {
+    text-align: center;
+    padding: 32px;
+}
+
+footer {
+    text-align: center;
+    padding: 32px;
+}
+
+input {
+  height: 28px;
+  width: 180px;
+  margin-left: 4px;
+  border: 2px solid #4CAF50;
+  padding-left: 8px;
+}
+
+.time-section {
+  margin-top: 18px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  height: 36px;
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:active {
+  background-color: #3e8e41;
+  color: white;
+  text-decoration: none;
+}
+
+button:disabled {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.tt-button-section {
+  margin-top: 16px;
+}
+
+.button-left {
+  float: left;
+  margin-left: 0px;
+  margin-right: 8px;
+}
+
+.button-right {
+  float: right;
+  margin-right: 0px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tt-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1115px;
+    justify-content: center;
+}
+
+.tt-list>li {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    border: 1px solid #4CAF50;
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px grey;
+    background-color: #ffffff;
+    height: 250px;
+    width: 350px;
+}
+
+.tt-list>li>div {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: 220px;
+    border: solid;
+    border-radius: 4px;
+    border-color: #f2f2f2;
+    padding: 8px;
+}

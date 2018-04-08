@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Time Tracker",
+    "version": "0.1",
+
+    "author": "Anna Molodtsova",
+
+    "description": "Allows to track time spent for certain project.",
+
+    "icons": {
+        "96": "icons/app_icon.png"
+    },
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "button/extButton.png",
+        "default_title": "Time Tracker"
+    },
+
+    "background": {
+        "scripts": ["extButtonAction.js"]
+    },
+
+    "permissions": ["unlimitedStorage"],
+
+    "applications": {
+        "gecko": {
+            "id": "time_tracker@addon.com",
+            "strict_min_version": "58.0"
+        }
+    }
+}
