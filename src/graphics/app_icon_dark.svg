@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="app_icon_dark.svg"
+   inkscape:export-batch-name="app_icon_dark"
+   inkscape:export-batch-path="/home/kira/Development/Web/timetracker_extension/src/graphics"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.06"
+     inkscape:cx="260.84906"
+     inkscape:cy="242.92453"
+     inkscape:window-width="1556"
+     inkscape:window-height="970"
+     inkscape:window-x="44"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="main" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="main"
+     inkscape:groupmode="layer"
+     id="main"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#1a1a1a;stroke-width:1.00841"
+       id="backgroud"
+       width="512"
+       height="512"
+       x="0"
+       y="0"
+       inkscape:label="backgroud"
+       sodipodi:insensitive="true" />
+    <path
+       d="m 208.16933,469.46337 q -48.2334,0 -68.36967,-23.67061 -19.90213,-23.95581 -19.90213,-81.56383 V 189.69376 H 49.888843 V 148.91183 H 119.89753 V 65.351681 L 162.97979,42.536627 V 148.91183 h 97.87165 v 40.78193 h -97.87165 v 174.53517 q 0,35.07815 11.00471,49.33756 11.0047,13.97422 38.3994,13.97422 h 48.46754 v 41.92266 z m 201.25972,0 q -48.2334,0 -68.36968,-23.67061 -19.90213,-23.95581 -19.90213,-81.56383 V 189.69376 h -70.00867 v -40.78193 h 70.00867 V 65.351681 L 364.2395,42.536627 V 148.91183 h 97.87166 v 40.78193 H 364.2395 v 174.53517 q 0,35.07815 11.00471,49.33756 11.00471,13.97422 38.39941,13.97422 h 48.46754 v 41.92266 z"
+       id="logo"
+       style="fill:#a200a2;fill-opacity:1;stroke-width:2.75635"
+       inkscape:label="logo"
+       sodipodi:insensitive="true" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://artlibre.org/licence/lal" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://artlibre.org/licence/lal">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

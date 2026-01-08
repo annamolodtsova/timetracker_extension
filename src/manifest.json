@@ -1,20 +1,90 @@
 {
     "manifest_version": 2,
     "name": "Time Tracker",
-    "version": "0.1",
+    "version": "1.0",
 
     "author": "Anna Molodtsova",
 
     "description": "Allows to track time spent for certain project.",
 
     "icons": {
-        "96": "icons/app_icon.png"
+        "32": "icons/app_icon_light_32.png",
+        "48": "icons/app_icon_light_48.png",
+        "64": "icons/app_icon_light_64.png",
+        "96": "icons/app_icon_light_96.png",
+        "128": "icons/app_icon_light_128.png"
+
     },
+
+    "theme_icons": [
+            {
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
+                "size": 16
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 32
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 48
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 64
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 96
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 128
+            }
+        ],
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "button/extButton.png",
-        "default_title": "Time Tracker"
+        "default_icon": "icons/app_icon_light_web.svg",
+        "default_title": "Time Tracker",
+        "theme_icons": [
+            {
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
+                "size": 16
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 32
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 48
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 64
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 96
+            },
+            {
+                "dark": "icons/icon-small-dark.svg",
+                "light": "icons/icon-small-light.svg",
+                "size": 128
+            }
+        ]
     },
 
     "background": {
