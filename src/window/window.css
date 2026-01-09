@@ -24,8 +24,46 @@ input {
   margin-top: 18px;
 }
 
-button {
+.start-button {
+  background-image: url("images/start.svg");
+}
+
+.pause-button {
+  background-image: url("images/pause.svg");
+}
+
+.remove-button {
+  background-image: url("images/remove.svg");
+}
+
+.reset-button {
+  background-image: url("images/reset.svg");
+}
+
+.img-button {
+  height: 36px;
+  width: 36px;
+  margin: 1px 3px;
+  background-size: 100%;
+  border: none;
+  /* transition-duration: 0.4s; */
+  transition: filter 0.4s ease;
+  background-color: transparent;
+}
+
+.img-button:hover {
+    filter: drop-shadow(0px 3px 3px #363636);
+}
+
+.img-button:active {
+    filter: drop-shadow(0px 1px 1px #363636);
+    /* transition-duration: 0.2s; */
+    transition: filter 0.2s ease;
+}
+
+.text-button {
   background-color: white;
+  background-size: 100%;
   color: black;
   border: 2px solid #4CAF50;
   height: 36px;
@@ -35,18 +73,18 @@ button {
   padding-right: 8px;
 }
 
-button:hover {
+.text-button:hover {
     background-color: #4CAF50;
     color: white;
 }
 
-button:active {
+.text-button:active {
   background-color: #3e8e41;
   color: white;
   text-decoration: none;
 }
 
-button:disabled {
+.text-button:disabled {
   background-color: #d9d9d9;
   color: black;
 }

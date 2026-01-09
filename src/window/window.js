@@ -155,35 +155,58 @@ function main() {
         let card_current_time = card.querySelector(".current-time");
         card_current_time.innerText = "00:00:00";
 
-        let card_button_start = card.querySelector(".start-button");
-        let card_button_pause = card.querySelector(".pause-button");
-        let card_button_remove = card.querySelector(".remove-button");
+        let cb_start_pause = card.querySelector(".start-pause-button");
+        let cb_remove = card.querySelector(".remove-button");
+        let cb_reset = card.querySelector(".reset-button");
 
-        card_button_start.onclick = () => {
-            card_button_start.disabled = true;
-            card_button_pause.disabled = false;
-            counter = 0;
-            let intervalId = setInterval(() => {
-                counter++;
-                subtotal_time++;
-                card_current_time.innerText = secToStr(counter);
-                card_subtotal_time.innerText = secToStr(subtotal_time);
-            }, 1000);
+        let timer_running = false;
+        let intervalId = null;
 
-            card_button_pause.onclick = () => {
+        cb_start_pause.onclick = () => {
+            if (timer_running === false) {
+                timer_running = true;
+                cb_start_pause.classList.toggle("start-button", false);
+                cb_start_pause.classList.toggle("pause-button", true);
+                cb_start_pause.title = "Pause";
+
+                counter = 0;
+                intervalId = setInterval(() => {
+                    counter++;
+                    subtotal_time++;
+                    card_current_time.innerText = secToStr(counter);
+                    card_subtotal_time.innerText = secToStr(subtotal_time);
+                }, 1000);
+            }
+            else {
+                timer_running = false;
+                cb_start_pause.classList.toggle("pause-button", false);
+                cb_start_pause.classList.toggle("start-button", true);
+                cb_start_pause.title = "Start";
                 clearInterval(intervalId);
-                card_button_start.disabled = false;
-                card_button_pause.disabled = true;
                 counter = 0;
                 
                 updateTime(db, id, subtotal_time);
                 card_common_time.innerText = secToStr(subtotal_time);
                 card_subtotal_time.innerText = secToStr(subtotal_time);
                 card_current_time.innerText = "00:00:00";
-            }
+            } 
         }
 
-        card_button_remove.onclick = () => {
+        cb_reset.onclick = () => {
+            timer_running = false;
+            cb_start_pause.classList.toggle("pause-button", false);
+            cb_start_pause.classList.toggle("start-button", true);
+            cb_start_pause.title = "Start";
+            clearInterval(intervalId);
+            counter = 0;
+            subtotal_time = 0;
+            updateTime(db, id, 0);
+            card_common_time.innerText = "00:00:00";
+            card_subtotal_time.innerText = "00:00:00";
+            card_current_time.innerText = "00:00:00";
+        }
+
+        cb_remove.onclick = () => {
             clearInterval(intervalId);
             removeTracker(id, db);
         }

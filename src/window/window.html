@@ -22,18 +22,18 @@
                     <div>Current progress: <time class="current-time"></time></div>
                 </section>
                 <section class="tt-button-section">
-                    <button type="button" class="button-left start-button">Start</button>
-                    <button type="button" class="button-left pause-button" disabled>Pause</button>
-                    <button type="button" class="button-right remove-button">Remove</button>
+                    <button type="button" title="Start" class="img-button button-left start-pause-button start-button"></button>
+                    <button type="button" title="Remove" class="img-button button-right remove-button"></button>
+                    <button type="button" title="Reset" class="img-button button-right reset-button"></button>
                 </section>
             </div>
-        </li>disabled
+        </li>
     </template>
 
     <main>
         <section class="main-section">
             <section>
-                <button id="add-button" type="button" disabled>Add tracker</button>
+                <button id="add-button" type="button" class="text-button" title="Add tracker" disabled>Add tracker</button>
                 <input id="title" type="text" maxlength="100" placeholder="Enter tracker name">
             </section>
             <section>
