@@ -1,5 +1,6 @@
 body {
     background-color: #fafafa;
+    font-family: "Hack", monospace;
 }
 
 header {
@@ -12,43 +13,71 @@ footer {
     padding: 32px;
 }
 
-input {
+#add-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+#add-button {
+  height: 42px;
+  width: 42px;
+  background-image: url("images/add.svg");
+}
+
+#title {
   height: 28px;
   width: 180px;
-  margin-left: 4px;
-  border: 2px solid #4CAF50;
+  border: 2px solid #54B265;
   padding-left: 8px;
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+#title:focus {
+    border-color: #33A5D2;
+    transition-duration: 0.4s;
 }
 
 .time-section {
   margin-top: 18px;
 }
 
-button {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
+.start-button {
+  background-image: url("images/start.svg");
+}
+
+.pause-button {
+  background-image: url("images/pause.svg");
+}
+
+.remove-button {
+  background-image: url("images/remove.svg");
+}
+
+.reset-button {
+  background-image: url("images/reset.svg");
+}
+
+
+.img-button {
   height: 36px;
-  cursor: pointer;
-  text-decoration: none;
-  padding-left: 8px;
-  padding-right: 8px;
+  width: 36px;
+  margin: 1px 3px;
+  background-size: 100%;
+  border: none;
+  transition: filter 0.4s ease;
+  background-color: transparent;
 }
 
-button:hover {
-    background-color: #4CAF50;
-    color: white;
+.img-button:hover {
+    filter: drop-shadow(0px 3px 3px #363636);
 }
 
-button:active {
-  background-color: #3e8e41;
-  color: white;
-  text-decoration: none;
-}
-
-button:disabled {
-  background-color: #d9d9d9;
-  color: black;
+.img-button:active {
+    filter: drop-shadow(0px 1px 1px #363636);
+    transition: filter 0.2s ease;
 }
 
 .tt-button-section {
@@ -66,7 +95,7 @@ button:disabled {
   margin-right: 0px;
 }
 
-.main-section {
+#main-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,21 +114,18 @@ button:disabled {
     display: flex;
     align-items: center;
     margin: 8px;
-    border: 1px solid #4CAF50;
+    border: 1px solid #54B265;
     border-radius: 2px;
     box-shadow: 0px 2px 5px grey;
     background-color: #ffffff;
-    height: 250px;
-    width: 350px;
+    height: auto;
+    width: auto;
 }
 
 .tt-list>li>div {
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin: 5px;
     height: auto;
-    width: 220px;
+    width: auto;
     border: solid;
     border-radius: 4px;
     border-color: #f2f2f2;

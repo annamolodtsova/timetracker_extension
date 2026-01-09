@@ -12,10 +12,28 @@
     <header>
         Time tracker!<br> Track your time for different projects.<br> No need to keep in mind how much was already spent.
     </header>
+    <template id="counter_tmpl">
+        <li>
+            <div>
+                <div class="card-caption">Caption</div>
+                <section class="time-section">
+                    <div>Common spent: <time class="common-time"></time></div>
+                    <div>Subtotal: <time class="subtotal-time"></time></div>
+                    <div>Current progress: <time class="current-time"></time></div>
+                </section>
+                <section class="tt-button-section">
+                    <button type="button" title="Start" class="img-button button-left start-pause-button start-button"></button>
+                    <button type="button" title="Remove" class="img-button button-right remove-button"></button>
+                    <button type="button" title="Reset" class="img-button button-right reset-button"></button>
+                </section>
+            </div>
+        </li>
+    </template>
+
     <main>
-        <section class="main-section">
-            <section>
-                <button id="add-button" type="button">Add tracker</button>
+        <section id="main-section">
+            <section id="add-section">
+                <button id="add-button" type="button" class="img-button" title="Add tracker" disabled></button>
                 <input id="title" type="text" maxlength="100" placeholder="Enter tracker name">
             </section>
             <section>
@@ -24,7 +42,7 @@
         </section>
     </main>
     <footer>
-        &copy 2018 Anna Molodtsova
+        &copy 2026 Anna Molodtsova and Kirill Shakirov
     </footer>
     <script type="text/javascript" src="window.js"></script>
 </body>
