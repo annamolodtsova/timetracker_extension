@@ -20,31 +20,26 @@
             {
                 "dark": "icons/app_icon_dark_web.svg",
                 "light": "icons/app_icon_light_web.svg",
-                "size": 16
-            },
-            {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
                 "size": 32
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 48
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 64
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 96
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 128
             }
         ],
@@ -57,31 +52,26 @@
             {
                 "dark": "icons/app_icon_dark_web.svg",
                 "light": "icons/app_icon_light_web.svg",
-                "size": 16
-            },
-            {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
                 "size": 32
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 48
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 64
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 96
             },
             {
-                "dark": "icons/icon-small-dark.svg",
-                "light": "icons/icon-small-light.svg",
+                "dark": "icons/app_icon_dark_web.svg",
+                "light": "icons/app_icon_light_web.svg",
                 "size": 128
             }
         ]
