@@ -1,5 +1,6 @@
 body {
     background-color: #fafafa;
+    font-family: "Hack", monospace;
 }
 
 header {
@@ -16,8 +17,16 @@ input {
   height: 28px;
   width: 180px;
   margin-left: 4px;
-  border: 2px solid #4CAF50;
+  border: 2px solid #54B265;
   padding-left: 8px;
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+input:focus {
+    border-color: #33A5D2;
+    /*outline: none;*/
+    transition-duration: 0.4s;
 }
 
 .time-section {
@@ -39,6 +48,11 @@ input {
 .reset-button {
   background-image: url("images/reset.svg");
 }
+
+.add-button {
+  background-image: url("images/add.svg");
+}
+
 
 .img-button {
   height: 36px;
@@ -65,7 +79,7 @@ input {
   background-color: white;
   background-size: 100%;
   color: black;
-  border: 2px solid #4CAF50;
+  border: 2px solid #54B265;
   height: 36px;
   cursor: pointer;
   text-decoration: none;
@@ -74,12 +88,12 @@ input {
 }
 
 .text-button:hover {
-    background-color: #4CAF50;
+    background-color: #54B265;
     color: white;
 }
 
 .text-button:active {
-  background-color: #3e8e41;
+  background-color: #54B265;
   color: white;
   text-decoration: none;
 }
@@ -123,21 +137,18 @@ input {
     display: flex;
     align-items: center;
     margin: 8px;
-    border: 1px solid #4CAF50;
+    border: 1px solid #54B265;
     border-radius: 2px;
     box-shadow: 0px 2px 5px grey;
     background-color: #ffffff;
-    height: 250px;
-    width: 350px;
+    height: auto;
+    width: auto;
 }
 
 .tt-list>li>div {
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin: 5px;
     height: auto;
-    width: 220px;
+    width: auto;
     border: solid;
     border-radius: 4px;
     border-color: #f2f2f2;
