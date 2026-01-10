@@ -1,11 +1,13 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Time Tracker",
-    "version": "1.0",
+    "version": "1.1",
 
-    "author": "Anna Molodtsova",
+    "author": "Anna Molodtsova and Kirill Shakirov",
 
     "description": "Allows to track time spent for certain project.",
+
+    "homepage_url": "https://github.com/annamolodtsova/timetracker_extension",
 
     "icons": {
         "32": "icons/app_icon_light_32.png",
@@ -16,77 +18,50 @@
 
     },
 
-    "theme_icons": [
-            {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
-                "size": 32
-            },
-            {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
-                "size": 48
-            },
-            {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
-                "size": 64
-            },
-            {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
-                "size": 96
-            },
-            {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
-                "size": 128
-            }
-        ],
-
-    "browser_action": {
-        "browser_style": true,
-        "default_icon": "icons/app_icon_light_web.svg",
+    "action": {
+        "default_icon": "icons/app_icon_light_64.png",
         "default_title": "Time Tracker",
         "theme_icons": [
             {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
+                "dark": "icons/app_icon_dark_32.png",
+                "light": "icons/app_icon_light_32.png",
                 "size": 32
             },
             {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
+                "dark": "icons/app_icon_dark_48.png",
+                "light": "icons/app_icon_light_48.png",
                 "size": 48
             },
             {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
+                "dark": "icons/app_icon_dark_64.png",
+                "light": "icons/app_icon_light_64.png",
                 "size": 64
             },
             {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
+                "dark": "icons/app_icon_dark_96.png",
+                "light": "icons/app_icon_light_96.png",
                 "size": 96
             },
             {
-                "dark": "icons/app_icon_dark_web.svg",
-                "light": "icons/app_icon_light_web.svg",
+                "dark": "icons/app_icon_dark_128.png",
+                "light": "icons/app_icon_light_128.png",
                 "size": 128
             }
         ]
     },
 
     "background": {
-        "scripts": ["extButtonAction.js"]
+        "service_worker": "extButtonAction.js"
     },
 
     "permissions": ["unlimitedStorage"],
 
-    "applications": {
+
+    "browser_specific_settings": {
         "gecko": {
             "id": "time_tracker@github.com",
-            "strict_min_version": "58.0"
+            "strict_min_version": "109"
         }
     }
+
 }

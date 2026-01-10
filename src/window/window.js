@@ -101,6 +101,12 @@ function main() {
         let addButton = document.getElementById("add-button");
         addButton.onclick = addNewTracker;
         addButton.disabled = false;
+
+        document.getElementById("title").onkeydown = (e) => {
+            if (e.key == "Enter") {
+                addNewTracker();
+            }
+        }
     }
 
     /*

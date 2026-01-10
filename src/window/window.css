@@ -106,7 +106,6 @@ footer {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    width: 1115px;
     justify-content: center;
 }
 
