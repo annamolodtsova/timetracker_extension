@@ -69,6 +69,8 @@ function main() {
         }
     }
 
+
+
     /*
     Params: db object
     Function initialises addNewTracker() function by clicking the add button (id="add-button")
@@ -142,10 +144,11 @@ function main() {
 
 
     function addCard(id, title, c_time, db) {
+
         let card = document.getElementById("counter_tmpl").content.firstElementChild.cloneNode(true);
-        console.debug("Calculated card ID ", ("db_id" + id));
+        //console.debug("Calculated card ID ", ("db_id" + id));
         card.id = "db_id" + id;
-        console.debug("Creating card ID ", card.id);
+        //console.debug("Creating card ID ", card.id);
 
         let counter = 0;
         let subtotal_time = c_time;
@@ -167,6 +170,25 @@ function main() {
 
         let timer_running = false;
         let intervalId = null;
+
+        let hide_time = 0;
+        let hide_counter_state = 0;
+        let hide_subtotal_time_state = 0;
+        
+        let on_visibility_change = () => {
+            if (document.hidden) {
+                hide_time = Date.now();
+                hide_counter_state = counter;
+                hide_subtotal_time_state = subtotal_time;
+            }
+            else if (timer_running) {
+                let elapsed_sec = Math.trunc((Date.now() - hide_time) / 1000);
+                counter += elapsed_sec;
+                subtotal_time += elapsed_sec;
+            }
+        }
+
+        document.addEventListener("visibilitychange", on_visibility_change);
 
         cb_start_pause.onclick = () => {
             if (timer_running === false) {
@@ -213,6 +235,7 @@ function main() {
         }
 
         cb_remove.onclick = () => {
+            document.removeEventListener("visibilitychange", on_visibility_change);
             clearInterval(intervalId);
             removeTracker(id, db);
         }
