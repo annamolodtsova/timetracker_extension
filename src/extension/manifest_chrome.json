@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "Time Tracker",
+    "version": "1.1",
+
+    "author": "Anna Molodtsova and Kirill Shakirov",
+
+    "description": "Allows to track time spent for certain project.",
+
+    "homepage_url": "https://github.com/annamolodtsova/timetracker_extension",
+
+    "icons": {
+        "32": "icons/app_icon_light_32.png",
+        "48": "icons/app_icon_light_48.png",
+        "64": "icons/app_icon_light_64.png",
+        "96": "icons/app_icon_light_96.png",
+        "128": "icons/app_icon_light_128.png"
+
+    },
+
+    "action": {
+        "default_icon": "icons/app_icon_light_64.png",
+        "default_title": "Time Tracker",
+        "theme_icons": [
+            {
+                "dark": "icons/app_icon_dark_32.png",
+                "light": "icons/app_icon_light_32.png",
+                "size": 32
+            },
+            {
+                "dark": "icons/app_icon_dark_48.png",
+                "light": "icons/app_icon_light_48.png",
+                "size": 48
+            },
+            {
+                "dark": "icons/app_icon_dark_64.png",
+                "light": "icons/app_icon_light_64.png",
+                "size": 64
+            },
+            {
+                "dark": "icons/app_icon_dark_96.png",
+                "light": "icons/app_icon_light_96.png",
+                "size": 96
+            },
+            {
+                "dark": "icons/app_icon_dark_128.png",
+                "light": "icons/app_icon_light_128.png",
+                "size": 128
+            }
+        ]
+    },
+
+    "background": {
+        "service_worker": "extButtonAction.js"
+    },
+
+    "permissions": ["unlimitedStorage"]
+
+}

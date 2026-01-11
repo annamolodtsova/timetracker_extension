@@ -15,7 +15,6 @@
         "64": "icons/app_icon_light_64.png",
         "96": "icons/app_icon_light_96.png",
         "128": "icons/app_icon_light_128.png"
-
     },
 
     "action": {
@@ -51,17 +50,18 @@
     },
 
     "background": {
-        "service_worker": "extButtonAction.js"
+        "scripts": ["extButtonAction.js"]
     },
 
     "permissions": ["unlimitedStorage"],
 
-
     "browser_specific_settings": {
         "gecko": {
             "id": "time_tracker@github.com",
-            "strict_min_version": "109"
+            "strict_min_version": "109.0",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
         }
     }
-
 }
