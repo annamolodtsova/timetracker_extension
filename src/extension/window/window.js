@@ -34,11 +34,17 @@ function main() {
 
         getRecords(db);
         initAddButton(db);
+
+        // save jobs status in case of page close or unload.
+        window.addEventListener("beforeunload", (e) => {
+            document.querySelectorAll(".start-pause-button[data-timer-running=true]")
+                .forEach(element => element.onclick());
+        });
     }
 
     function secToStr(seconds) {
-        let days = Math.floor(seconds / 86400);
-        let hours = Math.floor((seconds % 86400) / 3600);
+        //let days = Math.floor(seconds / 86400);
+        let hours = Math.floor(seconds / 3600);
         let minutes = Math.floor((seconds % 3600) / 60);
         let leftSeconds = seconds % 60;
         //console.debug(days + " days " + hours + ":" + minutes + ":" + leftSeconds);
@@ -152,8 +158,8 @@ function main() {
 
         let counter = 0;
         let subtotal_time = c_time;
-        
-        card.querySelector("div > div").innerText= title;
+
+        card.querySelector("div > div").innerText = title;
 
         let card_common_time = card.querySelector(".common-time");
         card_common_time.innerText = secToStr(subtotal_time);
@@ -169,12 +175,14 @@ function main() {
         let cb_reset = card.querySelector(".reset-button");
 
         let timer_running = false;
+        cb_start_pause.setAttribute("data-timer-running", false);
+
         let intervalId = null;
 
         let hide_time = 0;
         let hide_counter_state = 0;
         let hide_subtotal_time_state = 0;
-        
+
         let on_visibility_change = () => {
             if (document.hidden) {
                 hide_time = Date.now();
@@ -191,8 +199,11 @@ function main() {
         document.addEventListener("visibilitychange", on_visibility_change);
 
         cb_start_pause.onclick = () => {
+            console.debug("Start-Stop clicked");
             if (timer_running === false) {
                 timer_running = true;
+
+                cb_start_pause.setAttribute("data-timer-running", true);
                 cb_start_pause.classList.toggle("start-button", false);
                 cb_start_pause.classList.toggle("pause-button", true);
                 cb_start_pause.title = "Pause";
@@ -206,18 +217,21 @@ function main() {
                 }, 1000);
             }
             else {
+                console.debug("Start-Stop clicked - stop");
                 timer_running = false;
+
+                cb_start_pause.setAttribute("data-timer-running", false);
                 cb_start_pause.classList.toggle("pause-button", false);
                 cb_start_pause.classList.toggle("start-button", true);
                 cb_start_pause.title = "Start";
                 clearInterval(intervalId);
                 counter = 0;
-                
+
                 updateTime(db, id, subtotal_time);
                 card_common_time.innerText = secToStr(subtotal_time);
                 card_subtotal_time.innerText = secToStr(subtotal_time);
                 card_current_time.innerText = "00:00:00";
-            } 
+            }
         }
 
         cb_reset.onclick = () => {
