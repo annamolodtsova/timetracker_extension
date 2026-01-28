@@ -37,8 +37,8 @@ function main() {
     }
 
     function secToStr(seconds) {
-        let days = Math.floor(seconds / 86400);
-        let hours = Math.floor((seconds % 86400) / 3600);
+        //let days = Math.floor(seconds / 86400);
+        let hours = Math.floor(seconds / 3600);
         let minutes = Math.floor((seconds % 3600) / 60);
         let leftSeconds = seconds % 60;
         //console.debug(days + " days " + hours + ":" + minutes + ":" + leftSeconds);
