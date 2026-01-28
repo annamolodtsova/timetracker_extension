@@ -11,10 +11,10 @@ mv ./extension/manifest_firefox.json ./extension/manifest.json
 
 mv manifest_chrome.json ./extension/manifest.json
 
-# brave --pack-extension=extension --pack-extension-key=/path/to/key
-brave --pack-extension=extension
+brave --pack-extension=extension --pack-extension-key=timetracker_extension.pem
+# brave --pack-extension=extension
 mv extension.crx timetracker_extension.crx
-mv extension.pem timetracker_extension.pem
+#cp extension.pem timetracker_extension.pem
 
 rm -r extension
 
