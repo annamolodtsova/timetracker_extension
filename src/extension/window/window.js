@@ -1,6 +1,38 @@
 "use strict";
 
+
+const theme_button_title = {
+    light: "Switch to auto",
+    dark: "Switch to light",
+    auto: "Switch to dark",
+};
+
+function toggleTheme(e) {
+    const current_theme = document.documentElement.getAttribute("tracker-theme");
+    let new_theme = "";
+    if (current_theme === "auto") {
+        new_theme = "dark";
+    }
+    else if (current_theme === "dark") {
+        new_theme = "light";
+    }
+    else {
+        new_theme = "auto";
+    }
+    //setting button title
+    e.target.title=theme_button_title[new_theme];
+    // saving settings
+    localStorage.setItem("theme", new_theme);
+    // changing theme
+    document.documentElement.setAttribute("tracker-theme", new_theme);
+}
+
 function main() {
+
+    // setting default GUI theme
+    let app_theme = localStorage.getItem("theme");
+    if (app_theme === null) app_theme = "auto";
+    document.documentElement.setAttribute("tracker-theme", app_theme);
 
     let CARD_AREA = document.getElementById("card-list"); //element that consists of task card, buttons and time elements on it
     //console.debug(CARD_AREA);
@@ -57,6 +89,7 @@ function main() {
         let menu_section = document.getElementById("menu-section");
         let export_button = document.getElementById("export-button");
         let import_button = document.getElementById("import-button");
+        let theme_button = document.getElementById("theme-button");
         let file_input = document.getElementById("file_input");
 
         menu_button.onclick = () => {
@@ -105,6 +138,11 @@ function main() {
             file_input.click();
         }
         import_button.disabled = false;
+
+        // set theme toggle event
+        theme_button.onclick = toggleTheme;
+        theme_button.title = theme_button_title[app_theme];
+        theme_button.disabled = false;
 
     }
 

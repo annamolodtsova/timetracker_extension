@@ -15,5 +15,12 @@ Time calculated next to "Current progress" field will be noted and value next to
 To remove tracker click button "Remove".
 
 Github URL: https://github.com/annamolodtsova/timetracker_extension
+AMO URL: https://addons.mozilla.org/en-US/firefox/addon/timetracker_extension/
 
 Project is licensed under the GPL v3 or later. See LICENSE.txt for details.
+
+Contributors:
+[annamolodtsova](https://github.com/annamolodtsova)
+[Nyanraltotlapun](https://github.com/Nyanraltotlapun)
+[Tsenzuk](https://github.com/Tsenzuk)
+

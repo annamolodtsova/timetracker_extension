@@ -2,9 +2,9 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 
 <svg
-   width="800"
-   height="800"
-   viewBox="0 0 1024 1024"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
    class="icon"
    version="1.1"
    id="svg3"
@@ -23,26 +23,26 @@
      borderopacity="0.25"
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.89875"
+     inkscape:zoom="1"
      inkscape:window-x="44"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg3"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
-     inkscape:cx="367.17663"
-     inkscape:cy="369.40195"
+     inkscape:cx="256"
+     inkscape:cy="256"
      inkscape:window-width="1556"
-     inkscape:window-height="969" />
+     inkscape:window-height="967" />
   <path
-     d="M 871.46666,892.8 H 188.8 c -46.93334,0 -85.33334,-38.4 -85.33334,-85.33334 v -512 c 0,-46.93333 38.4,-85.33333 85.33334,-85.33333 h 682.66666 c 46.93334,0 85.33334,38.4 85.33334,85.33333 v 512 C 956.8,854.4 918.4,892.8 871.46666,892.8 Z"
+     d="M 456.88278,477.82662 H 55.11722 c -27.62139,0 -50.2206999,-22.59932 -50.2206999,-50.2207 V 126.28174 c 0,-27.621381 22.5993099,-50.220691 50.2206999,-50.220691 h 401.76556 c 27.62139,0 50.2207,22.59931 50.2207,50.220691 v 301.32418 c 0,27.62138 -22.59931,50.2207 -50.2207,50.2207 z"
      fill="#ffccbc"
      id="square"
-     style="stroke-width:16.64;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+     style="stroke:#000000;stroke-width:9.79304;stroke-dasharray:none;stroke-opacity:1"
      inkscape:label="square" />
   <path
      id="arrow"
-     d="M 530.1325 131.2 L 338.1325 359.4675 L 466.1325 359.4675 L 466.1325 743.4675 L 594.1325 743.4675 L 594.1325 359.4675 L 722.1325 359.4675 L 530.1325 131.2 z "
-     style="fill:#ff5722;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:16.64;stroke-dasharray:none"
+     d="M 255.99951,29.606909 143.00295,163.94776 h 75.33104 v 225.99313 h 75.33104 V 163.94776 h 75.33105 z"
+     style="fill:#ff5722;fill-opacity:1;stroke:#000000;stroke-width:9.79304;stroke-dasharray:none;stroke-opacity:1"
      inkscape:label="arrow" />
 </svg>

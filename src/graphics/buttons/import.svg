@@ -2,9 +2,9 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 
 <svg
-   width="800px"
-   height="800px"
-   viewBox="0 0 1024 1024"
+   width="512"
+   height="512"
+   viewBox="0 0 327.68 327.68"
    class="icon"
    version="1.1"
    id="svg3"
@@ -32,28 +32,36 @@
      inkscape:deskcolor="#d1d1d1"
      showborder="false"
      inkscape:zoom="0.89875"
-     inkscape:cx="400.55633"
-     inkscape:cy="399.44367"
+     inkscape:cx="401.11266"
+     inkscape:cy="205.84145"
      inkscape:window-width="1556"
-     inkscape:window-height="969"
+     inkscape:window-height="967"
      inkscape:window-x="44"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg3" />
   <path
-     d="M 864,885.33333 H 181.33333 C 134.4,885.33333 96,846.93333 95.999999,800 V 288 c 0,-46.93333 38.400001,-85.33333 85.333331,-85.33333 H 864 c 46.93333,0 85.33333,38.4 85.33333,85.33333 v 512 c 0,46.93333 -38.4,85.33333 -85.33333,85.33333 z"
+     d="M 292.40499,305.80936 H 35.275015 C 17.597331,305.80936 3.13377,291.3458 3.13377,273.66812 V 80.82064 c 0,-17.67769 14.463561,-32.14125 32.141245,-32.14125 H 292.40499 c 17.67768,0 32.14124,14.46356 32.14124,32.14125 v 192.84748 c 0,17.67768 -14.46356,32.14124 -32.14124,32.14124 z"
      fill="#f8bbd0"
      id="square"
      inkscape:label="square"
-     style="stroke:#000000;stroke-width:16.64;stroke-dasharray:none;stroke-opacity:1" />
+     style="stroke:#000000;stroke-width:6.26754;stroke-dasharray:none;stroke-opacity:1"
+     sodipodi:insensitive="true" />
   <path
      id="arrow"
-     d="m 458.6675,138.6675 v 384 h -128 l 192,228.265 192,-228.265 h -128 v -384 z"
-     style="opacity:1;fill:#e91e63;fill-opacity:1;stroke:#000000;stroke-width:16.64;stroke-dasharray:none;stroke-opacity:1"
-     inkscape:label="arrow" />
+     d="M 139.73438,24.57377 V 169.20938 H 91.522509 l 72.317811,85.9772 72.3178,-85.9772 H 187.94625 V 24.57377 Z"
+     style="opacity:1;fill:#e91e63;fill-opacity:1;stroke:#000000;stroke-width:6.26754;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:label="arrow"
+     sodipodi:insensitive="true" />
   <metadata
      id="metadata3">
     <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://artlibre.org/licence/lal" />
+        <dc:title>Import Button</dc:title>
+      </cc:Work>
       <cc:License
          rdf:about="http://artlibre.org/licence/lal">
         <cc:permits
@@ -69,12 +77,6 @@
         <cc:requires
            rdf:resource="http://creativecommons.org/ns#Attribution" />
       </cc:License>
-      <cc:Work
-         rdf:about="">
-        <cc:license
-           rdf:resource="http://artlibre.org/licence/lal" />
-        <dc:title>Import Button</dc:title>
-      </cc:Work>
     </rdf:RDF>
   </metadata>
 </svg>
