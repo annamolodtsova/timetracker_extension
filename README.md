@@ -19,6 +19,13 @@ AMO URL: https://addons.mozilla.org/en-US/firefox/addon/timetracker_extension/
 
 Project is licensed under the GPL v3 or later. See LICENSE.txt for details.
 
+Donations:  
+(BTC) `bc1q8wntnwp7gvzsja2gyz3v54dl0rtw8dvurr9adn` (Bitcoin BIP84)  
+(LTC) `ltc1qekz29886ygxrsaltqzhqxum5v0a7hznxj5f8cf` (Litecoin BIP84)  
+(XMR) `82oWmSEmMAvKd5sR8Ein9DCf8PumADAPxZcqUpTJHimpfiFVhbC6jfGSStrMhKhFGU57PdZmoMK7mAgZw6Rx3frXESqRZDh`  
+(BNB) `0x98699c93856149C452c0e656Ff3266a0CC25D71a` (BNB Smart Chain)  
+(TON) `UQBwH1wo6WGnFg87SUZPXM2cLg_xzGBXonI8EJgbpu75kBVT` (The Open Network)  
+
 Contributors:
 [annamolodtsova](https://github.com/annamolodtsova)
 [Nyanraltotlapun](https://github.com/Nyanraltotlapun)
